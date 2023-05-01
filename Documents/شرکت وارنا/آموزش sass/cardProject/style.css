@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Castoro Titling", cursive;
+}
+
+.header-style, .card .header-card {
+  width: 100%;
+  background-color: #505050;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #505050;
+  width: 350px;
+  padding: 30px;
+  border-radius: 5%;
+  margin: 200px auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+.main img {
+  width: 30%;
+  border-radius: 100%;
+}
+.main .title {
+  margin: 5px 3px;
+  color: white;
+}
+.main .subtitle {
+  color: rgb(179, 174, 174);
+}
+.main .des {
+  margin: 10px 3px;
+  color: rgb(179, 174, 174);
+}
+.main .button {
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(94, 9, 122) 25%, rgb(255, 0, 172) 100%);
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.footer .social {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.footer .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .icon {
+  font-size: 30px;
+  color: white;
+  border-radius: 100%;
+  background: rgb(227, 134, 212);
+  background: linear-gradient(90deg, rgb(227, 134, 212) 0%, rgb(238, 103, 103) 48%);
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  margin: 10px 0px;
+  font-size: 20px;
+  color: white;
+}
+.footer span {
+  font-size: 12px;
+}
+.footer .number {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

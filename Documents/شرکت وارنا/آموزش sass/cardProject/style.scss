@@ -1,0 +1,116 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Castoro Titling', cursive;
+    ;
+}
+$color-w:white;
+$bg-color:gray;
+.header-style{
+    width:100%;
+    background-color: #505050;
+    display:flex;
+    justify-content: space-between;
+}
+@mixin card-main($bg){
+    background-color: $bg ;
+}
+@mixin main-card($color){
+    img{
+        width:30%;
+        border-radius: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        margin: 5px 3px;
+        color:white;
+    }
+    .subtitle{
+        color:rgb(179, 174, 174);
+    }
+    .des{
+        margin: 10px 3px;
+        color:rgb(179, 174, 174);
+    }
+    .button{
+        padding: 15px 20px;
+        border-radius: 20px;
+        border:none;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(94,9,122,1) 25%, rgba(255,0,172,1) 100%);
+color:white;
+font-weight: bold;
+    }
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+@mixin footer($color){
+    display: flex;
+    flex-direction: row;
+    .social{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.icon{
+    font-size: 30px;
+    color:$color;
+    border-radius: 100%;
+    background: rgb(227,134,212);
+background: linear-gradient(90deg, rgba(227,134,212,1) 0%, rgba(238,103,103,1) 48%);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 10px 0px;
+    font-size: 20px; 
+    color:white
+ }
+ span{
+    font-size: 12px;
+ }
+ .number{
+    text-align: center;
+ }
+
+
+        
+           
+           
+        }
+      
+
+.card{
+    @include card-main(#505050);
+    width:350px;
+     
+   
+    padding:30px;
+    border-radius: 5%;
+    margin: 200px auto;
+    .header-card{
+        @extend .header-style;
+        
+    }
+    
+    
+}
+.main{
+    @include main-card($color-w);
+}
+.footer{
+    @include footer(white);
+}
